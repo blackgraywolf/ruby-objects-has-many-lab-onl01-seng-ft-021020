@@ -30,12 +30,12 @@ class Artist
   end
 
   def self.song_count
-    
-   num = 0
-   Song.all.each do |song|
-     ary << song
- end
- ary
+    Song.all.count
+ #  num = 0
+#   Song.all.each do |song|
+ #    num += 1
+ #end
+# num
   end
 
 end
