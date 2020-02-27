@@ -31,7 +31,11 @@ class Artist
 
   def self.song_count
     
-    songs.count
+   num = 0
+   Song.all.each do |song|
+     ary << song
+ end
+ ary
   end
 
 end
