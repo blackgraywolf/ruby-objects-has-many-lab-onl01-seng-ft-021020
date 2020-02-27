@@ -8,7 +8,11 @@ class Author
   end
 
   def posts
-   
+      ary = []
+   Post.all.each do |me_post_me_dude|
+     ary << me_post_me_dude
+ end
+ ary
   end
 
   def add_post(post)
